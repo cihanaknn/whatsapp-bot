@@ -25,7 +25,7 @@ let w = MODE == 'public' ? false : true
 Module({
   pattern: 'menu',
   fromMe: w,
-  desc: 'Is bot alive?'
+  desc: 'Bot aktif mi?'
 }, (async (message, match) => {
   var myid = message.client.user.id.split(":")[0]
   var buttons = [{
@@ -35,7 +35,7 @@ Module({
     }
 }, {
   urlButton: {
-    displayText: 'Contact Owner',
+    displayText: 'Benle konuş',
     url: 'https://wa.me/'+BOT_INFO.split(";")[2]+'?text=Hey+bro'
     }
 }, {
